@@ -1,26 +1,26 @@
 package tree1;
 
-// Tạo cây chứa số
-public class Node {
-    private int value;
+
+public class Node<T> {
+    private T value;
     private Node left = null;
     private Node right = null;
 
-    public Node(int value) {
+    public Node(T value) {
         this.value = value;
     }
 
-    public Node(int value, Node left, Node right) {
+    public Node(T value, Node left, Node right) {
         this.value = value;
         this.left = left;
         this.right = right;
     }
 
-    public int getValue() {
+    public T getValue() {
         return value;
     }
 
-    public void setValue(int value) {
+    public void setValue(T value) {
         this.value = value;
     }
 
