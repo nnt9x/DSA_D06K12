@@ -20,19 +20,19 @@ public class Main {
         binaryTree.postorder(binaryTree.getRootNode());
 
          */
-        BinaryTree binaryTree = new BinaryTree(new Node("F"));
-        binaryTree.getRootNode().setLeft(new Node("B"));
-        binaryTree.getRootNode().setRight(new Node("G"));
+        BinaryTree binaryTree = new BinaryTree(new Node<>("F"));
+        binaryTree.getRootNode().setLeft(new Node<>("B"));
+        binaryTree.getRootNode().setRight(new Node<>("G"));
 
-        binaryTree.getRootNode().getLeft().setLeft(new Node("A"));
-        binaryTree.getRootNode().getLeft().setRight(new Node("D"));
+        binaryTree.getRootNode().getLeft().setLeft(new Node<>("A"));
+        binaryTree.getRootNode().getLeft().setRight(new Node<>("D"));
 
-        binaryTree.getRootNode().getLeft().getRight().setLeft(new Node("C"));
-        binaryTree.getRootNode().getLeft().getRight().setRight(new Node("E"));
+        binaryTree.getRootNode().getLeft().getRight().setLeft(new Node<>("C"));
+        binaryTree.getRootNode().getLeft().getRight().setRight(new Node<>("E"));
 
 
-        binaryTree.getRootNode().getRight().setRight(new Node("I"));
-        binaryTree.getRootNode().getRight().getRight().setLeft(new Node("H"));
+        binaryTree.getRootNode().getRight().setRight(new Node<>("I"));
+        binaryTree.getRootNode().getRight().getRight().setLeft(new Node<>("H"));
 
         binaryTree.inorder(binaryTree.getRootNode());
         System.out.println();
