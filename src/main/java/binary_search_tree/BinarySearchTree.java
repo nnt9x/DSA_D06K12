@@ -31,4 +31,19 @@ public class BinarySearchTree<T extends Comparable<T>> {
         return root;
     }
 
+
+    public boolean contain(T key) {
+        Node<T> tmp = root;
+        while (tmp != null) {
+            if (key.compareTo(tmp.getValue()) == 0) {
+                return true;
+            } else if (key.compareTo(tmp.getValue()) < 0) {
+                tmp = tmp.getLeft();
+            } else if (key.compareTo(tmp.getValue()) > 0) {
+                tmp = tmp.getRight();
+            }
+        }
+        return false;
+    }
+
 }

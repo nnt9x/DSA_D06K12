@@ -6,6 +6,9 @@ public class Student implements Comparable<Student> {
     private String address;
     private String gender;
 
+   public Student(long id){
+       this.id = id;
+   }
 
     public Student(long id, String name) {
         this.id = id;

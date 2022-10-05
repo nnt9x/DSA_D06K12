@@ -13,13 +13,14 @@ public class Main {
         integerBinarySearchTree.insert(8);
         System.out.println(integerBinarySearchTree);
 
+        boolean isContain = integerBinarySearchTree.contain(21);
+        System.out.println(isContain);
 
-        BinarySearchTree<Student> studentBinarySearchTree = new BinarySearchTree<>();
-        studentBinarySearchTree.insert(new Student(10,"SV 1"));
-        studentBinarySearchTree.insert(new Student(8,"SV 2"));
-        studentBinarySearchTree.insert(new Student(9,"SV 3"));
-        studentBinarySearchTree.insert(new Student(11,"SV 4"));
-        System.out.println(studentBinarySearchTree);
 
+        ManagerStudent managerStudent = new ManagerStudent();
+        managerStudent.addNewStudent(new Student(1,"Nguyen Van A"));
+        managerStudent.addNewStudent(new Student(10,"Nguyen Thi B"));
+
+        System.out.println(managerStudent.findStudentById(10));
     }
 }
